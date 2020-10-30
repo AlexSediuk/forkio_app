@@ -1,13 +1,5 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "my_step-forkio",
-=======
   "name": "forkio_app",
->>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
-=======
-  "name": "forkio_app",
->>>>>>> sediuk_branch
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,15 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/AlexSediuk/forkio_app.git"
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "author": "",
-=======
-  "author": "Artem Treiko",
->>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
-=======
   "author": "Alex Sediuk",
->>>>>>> sediuk_branch
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlexSediuk/forkio_app/issues"
