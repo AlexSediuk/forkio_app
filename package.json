@@ -1,13 +1,21 @@
 {
-  "name": "my_step-forkio",
+  "name": "forkio_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp build"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSediuk/forkio_app.git"
+  },
+  "author": "Alex Sediuk",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexSediuk/forkio_app/issues"
+  },
+  "homepage": "https://github.com/AlexSediuk/forkio_app#readme",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.13",
