@@ -1,5 +1,6 @@
 const gulp = require('gulp'),
 <<<<<<< HEAD
+<<<<<<< HEAD
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
       cleanCSS = require('gulp-clean-css'),
@@ -13,6 +14,8 @@ const gulp = require('gulp'),
       browserSync = require('browser-sync').create();
 
 =======
+=======
+>>>>>>> sediuk_branch
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -24,7 +27,10 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cssmin = require('gulp-cssmin'),
     browserSync = require('browser-sync').create();
+<<<<<<< HEAD
 >>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
+=======
+>>>>>>> sediuk_branch
 const path = {
     dist: {
         html: 'dist',
@@ -43,12 +49,16 @@ const path = {
     },
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**************** F U N C T I O N S ***************/
 
 =======
 /**************** F U N C T I O N S ***************/
 >>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
+=======
+/**************** F U N C T I O N S ***************/
+>>>>>>> sediuk_branch
 const htmlBuild = () =>
     gulp.src(path.src.html).pipe(gulp.dest(path.dist.html)).pipe(browserSync.stream());
 const scssBuild = () =>
@@ -79,12 +89,16 @@ const cleanProd = () =>
 // const icoBuild = () =>
 //     gulp.src(path.src.ico).pipe(gulp.dest(path.dist.ico)).pipe(browserSync.stream());
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /****************** W A T C H E R ***************/
 
 =======
 /****************** W A T C H E R ***************/
 >>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
+=======
+/****************** W A T C H E R ***************/
+>>>>>>> sediuk_branch
 const watcher = () => {
     browserSync.init({
         server: {
@@ -97,12 +111,16 @@ const watcher = () => {
     gulp.watch(path.src.img, imgBuild).on('change', browserSync.reload);
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**************** T A S K S ****************/
 
 =======
 /**************** T A S K S ****************/
 >>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
+=======
+/**************** T A S K S ****************/
+>>>>>>> sediuk_branch
 gulp.task(
     'build',
     gulp.series(cleanProd, htmlBuild, scssBuild, imgBuild, jsBuild, watcher)

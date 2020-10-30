@@ -4,7 +4,11 @@
 node_modules/**/**
 package-lock.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 dist/**/**
 =======
 dist/**/**
 >>>>>>> 2ee530c92cfe20ecf9cb0a2404878420fd7aeb99
+=======
+dist/**/**
+>>>>>>> sediuk_branch
