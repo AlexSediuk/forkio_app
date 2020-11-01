@@ -1,14 +1,34 @@
-li {
-  color: red;
-  font-size: 50px;
+.revolutionary_editor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-p {
-  font-weight: lighter;
-  font-size: 33px;
-  color: #008cff;
+.unlimited {
+  color: #848E97;
+  font-size: 14px;
 }
-div {
-  padding: 30px;
-  color: #10bf10;
-  font-size: 50px;
+.revo_editor {
+  color: #635C73;
+  font-weight: bold;
+  font-size: 54px;
+  text-transform: uppercase;
+}
+.aenean_text {
+  color: #323232;
+  font-size: 21px;
+
+}
+.watch {
+  font-size: 21px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.octicon {
+
+  padding: 2px;
 }
