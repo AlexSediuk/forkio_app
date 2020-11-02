@@ -1,0 +1,21 @@
+
+@mixin central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin button-styles {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
