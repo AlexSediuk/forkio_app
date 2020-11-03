@@ -1,16 +1,16 @@
 .here_is_what_you_get {
   height: 711px;
   background: #F4F4F4;
-}
-aside {
-  float: right;
-}
-.here_is {
-  font-weight: bold;
-  font-size: 48px;
-  margin-top: 94px;
-  margin-bottom: 20px;
-  color: #8D81AC;
+  aside {
+    float: right;
+    .here_is {
+      font-weight: bold;
+      font-size: 48px;
+      margin-top: 94px;
+      margin-bottom: 20px;
+      color: #8D81AC;
+    }
+  }
 }
 .here_is-item_top {
   padding-top: 110px;
@@ -19,23 +19,23 @@ aside {
   display: flex;
   margin-bottom: 40px;
   padding-right: 193px;
-}
-.imagen {
-  display: inline-table;
-  width: 115px;
-  height: 95px;
-  margin-left: 106px;
-}
-.here_is-title {
-  margin: 0 auto;
-  font-size: 16px;
-  color: #323232;
-}
-.here_is-text {
-  font-size: 14px;
-  color: #848E97;
+  .imagen {
+    display: inline-table;
+    width: 115px;
+    height: 95px;
+    margin-left: 106px;
+  }
 }
 .here_is_text_text {
   margin-left: 44px;
   padding: 0;
+  .here_is-title {
+    margin: 0 auto;
+    font-size: 16px;
+    color: #323232;
+  }
+  .here_is-text {
+    font-size: 14px;
+    color: #848E97;
+  }
 }
