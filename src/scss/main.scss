@@ -76,12 +76,15 @@ a {
     align-items: center;
     height: 100%;
     justify-content: flex-end;
+    position: relative;
+    top: 55px;
 
     &__button {
         @include button-styles;
         padding: .875rem 2.5rem;
         font-size: 1.3rem;
         margin-bottom: 1.1rem;
+        
     }
 
     &__text {
