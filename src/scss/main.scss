@@ -1,8 +1,8 @@
 
-@import '_variables';
-@import '_mixins';
-@import '_reset';
-@import '_header';
+@import 'variables';
+@import "mixins";
+@import 'reset';
+@import './sections/header';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -12,14 +12,27 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper {
+    max-height: 100%;
+}
+
+// ======== SECTION INTRO
+
+.intro {
+    background-image: url('../img/sections/intro-background.png');
+    background-size: cover;
+    height: 100%;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid black;
-    background-color: red;
+    background-color: transparent;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
