@@ -1,4 +1,4 @@
-const gulp = require('gulp'),
+ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -39,6 +39,7 @@ const scssBuild = () =>
         .pipe(concat('styles.min.css'))
         .pipe(gulp.dest(path.dist.css))
         .pipe(browserSync.stream());
+        
 const imgBuild = () =>
     gulp.src(path.src.img).pipe(imagemin()).pipe(gulp.dest(path.dist.img)).pipe(browserSync.stream());
 const jsBuild = () =>

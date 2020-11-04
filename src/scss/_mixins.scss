@@ -1,0 +1,25 @@
+
+@mixin central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin button-styles {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    color: $purple-color;
+    font-weight: bold;
+    border: 1px solid #8D81AC;
+}
+
