@@ -1,13 +1,16 @@
-$color_1: #F4F4F4;
-$color_2: #d3d3d3;
+$color_grey_1: #F4F4F4;
+$color_grey_2: #d3d3d3;
 $color_3: #323232;
 
-
-.revolutionary_editor {
+%flex_center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.revolutionary_editor {
   text-align: center;
+
+  @extend %flex_center;
 
   .unlimited {
     color: #848E97;
@@ -34,7 +37,7 @@ $color_3: #323232;
   .git_button {
     display: inline-flex;
     justify-content: center;
-    border: 1px solid $color_2;
+    border: 1px solid $color_grey_2;
     border-radius: 4px;
     margin-right: 5px;
     margin-bottom: 70px;
@@ -43,9 +46,9 @@ $color_3: #323232;
       display: inline-flex;
       font-size: 12px;
       font-weight: bold;
-      border-right: 1px solid $color_2;
+      border-right: 1px solid $color_grey_2;
       padding: 5px 20px 0 20px;
-      background: $color_1;
+      background: $color_grey_1;
 
       .octicon {
         padding-right: 5px;
@@ -53,13 +56,12 @@ $color_3: #323232;
     }
 
     .quantity {
-      display: inline-flex;
-      text-align: center;
-      justify-content: center;
       align-items: center;
       font-size: 12px;
       font-weight: bold;
       padding: 5px;
+
+      @extend %flex_center;
     }
 
     .button-watch {
@@ -71,7 +73,7 @@ $color_3: #323232;
 }
 .here_is_what_you_get {
   height: 711px;
-  background: $color_1;
+  background: $color_grey_1;
   aside {
     float: right;
     .here_is {
@@ -90,7 +92,7 @@ $color_3: #323232;
   display: flex;
   margin-bottom: 40px;
   padding-right: 193px;
-  .imagen {
+  .image {
     display: inline-table;
     width: 115px;
     height: 95px;

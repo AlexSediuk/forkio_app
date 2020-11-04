@@ -1,46 +1,50 @@
+$color_white: #FFFFFF;
+
 .fork_sections {
   height: 769px;
   background-image: url("../img/testmonials-bg.png");
-}
-.six_fork_sections {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-}
-.people {
-  margin: 0 auto;
-  padding-top: 81px;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 50px;
-  text-transform: capitalize;
-  text-align: center;
+  .people {
+    margin: 0 auto;
+    padding-top: 81px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: capitalize;
+    text-align: center;
 
-  color: #FFFFFF;
+    color: $color_white;
+  }
+  .six_fork_sections {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
 .fork_sections-item {
   display: grid;
   align-items: end;
   justify-items: center;
-}
-.fork_sections-text {
-  width: 345px;
-  margin: 0 auto;
-  padding-top: 30px;
-  display: flex;
-  align-content: flex-end;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
+  .fork_sections-img {
+    padding-top: 65px;
+    text-align: end;
+  }
+  .fork_sections-text {
+    width: 345px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    align-content: flex-end;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
 
-  color: #FFFFFF;
+    color: $color_white;
+  }
 }
-.fork_sections-img {
-  padding-top: 65px;
-  text-align: end;
-}
+
 .footer-text {
   font-family: 'Lato', sans-serif;
   width: 887px;
@@ -54,13 +58,13 @@
   text-align: center;
 
   color: #A291A5;
-}
-.footer-text:after {
-  content: "";
-  width: 780px;
-  height: 2px;
-  left: 65px;
-  top: 60px;
-  position: absolute;
-  background: #645766;
+  &:after {
+    content: "";
+    width: 780px;
+    height: 2px;
+    left: 65px;
+    top: 60px;
+    position: absolute;
+    background: #645766;
+  }
 }

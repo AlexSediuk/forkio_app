@@ -1,3 +1,12 @@
+%flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$color_white: #FFFFFF;
+$color_bg: #8D81AC;
+
 .fork_subscription_pricing {
   display: grid;
   height: 847px;
@@ -8,15 +17,14 @@
 .fork_title {
   margin: 0 auto;
   padding-bottom: 61px;
-  display: flex;
   font-weight: bold;
   font-size: 48px;
   line-height: 50px;
-  color: #FFFFFF;
   text-transform: capitalize;
-  justify-content: center;
   text-align: center;
-  align-items: center;
+
+  color: $color_white;
+  @extend %flex_center;
 }
 .cards {
   display: flex;
@@ -27,14 +35,13 @@
   text-align: center;
   width: 257px;
   height: 457px;
-  border: 2px solid yellow;
+  background: rgba(215, 207, 207, 0.2);
 }
 .students_title {
   display: flex;
 }
 .students {
   margin: 0 auto;
-  border: 1px solid #33cc33;
   display: flex;
   width: 257px;
   height: 97px;
@@ -42,33 +49,31 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  background: rgba(215, 207, 207, 0.3);
+  color: $color_white;
 }
 .price {
   position: relative;
+
 }
 .dollar {
   margin: 0 auto;
   padding-top: 30px;
   font-size: 60px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: $color_white;
+  @extend %flex_center;
 }
 .per_month {
   font-size: 14px;
   padding-top: 20px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
 
-  color: #FFFFFF
+  color: $color_white;
+  @extend %flex_center;
 }
 .per_month:after {
   content: '';
@@ -76,7 +81,7 @@
   display: block;
   width: 60px;
   height: 5px;
-  background: #8D81AC;
+  background: $color_bg;
   top: 175px;
 }
 .license {
@@ -85,17 +90,14 @@
   font-size: 16px;
   padding-top: 79px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: capitalize;
 
-  color: #FFFFFF;
+  color: $color_white;
+  @extend %flex_center;
 }
 .purchase {
   width: 163px;
   height: 45px;
-  border: 1px solid #FFFFFF;
   border-radius: 40px;
   text-decoration: none;
   font-size: 15px;
@@ -106,8 +108,8 @@
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-
-  color: #FFFFFF;
+  background: rgba(215, 207, 207, 0.2);
+  color: $color_white;
 
 }
 .students_title_agency {
@@ -118,6 +120,7 @@
 .students_agency {
   width: 299px;
   height: 111px;
+  background: rgba(55, 54, 54, 0.4);
 }
 .block_agency {
   background: #463048;
@@ -132,12 +135,10 @@
   padding-top: 12px;
   font-size: 82px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: $color_white;
+  @extend %flex_center;
 }
 .license_agency {
   width: 257px;
@@ -145,13 +146,11 @@
   font-size: 16px;
   padding-top: 79px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   text-transform: capitalize;
 
-  color: #FFFFFF;
+  color: $color_white;
+  @extend %flex_center;
 }
 .purchase_agency {
   position: absolute;
@@ -160,20 +159,15 @@
   width: 190px;
   height: 52px;
 
-  border: 1px solid #FFFFFF;
   border-radius: 40px;
   text-decoration: none;
   font-size: 15px;
   margin-top: 36px;
   margin-bottom: 37px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: $color_white;
 }
 .per_month_agency {
   position: relative;
@@ -185,6 +179,6 @@
   display: block;
   width: 60px;
   height: 5px;
-  background: #8D81AC;
+  background: $color_bg;
   top: 85px;
 }
