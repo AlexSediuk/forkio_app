@@ -1,0 +1,28 @@
+@import 'mixins';
+
+@media (max-width: $tablet) {
+    .header__burger {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 30px;
+    }
+
+    &__::before {
+        @include pseudo;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 0;
+    }
+
+    &__::after {
+        @include pseudo;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+    }
+}
