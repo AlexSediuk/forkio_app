@@ -1,16 +1,45 @@
-$color_grey_1: #F4F4F4;
-$color_grey_2: #d3d3d3;
-$color_3: #323232;
 
-%flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+
 }
+.revolutionary__title {
+
+}
+.revolutionary__subtitle {
+
+}
+.evolutionary__list {
+
+}
+.revolutionary__item {
+
+}
+.revolutionary__icon {
+
+}
+.revolutionary__img {
+
+}
+.revolutionary__text {
+
+}
+.revolutionary__details {
+
+}
+
+
+
+
+
+
+
+
 .revolutionary_editor {
   text-align: center;
 
-  @extend %flex_center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .unlimited {
     color: #848E97;
