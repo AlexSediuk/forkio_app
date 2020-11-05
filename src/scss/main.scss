@@ -36,8 +36,9 @@ a {
     background-image: url('../img/sections/intro-background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    // height: 100vh;
+    min-height: 100%;
     background-position: center;
+    
 
     &__info {
         display: flex;
@@ -80,7 +81,7 @@ a {
     height: 100%;
     justify-content: flex-end;
     position: relative;
-    top: 55px;
+    top: 57px;
 
     &__button {
         @include button-styles;
@@ -103,6 +104,8 @@ a {
         font-size: 0.875rem;
     }
 }
+
+
 
 
 
