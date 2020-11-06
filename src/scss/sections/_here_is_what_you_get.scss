@@ -10,7 +10,7 @@
   .features__title {
     display: flex;
     justify-content: flex-end;
-    margin: 19px 0 0 170px;
+    margin: 0 170px 19px 0;
     padding-top: 94px;
     font-weight: bold;
     font-size: 42px;
@@ -21,36 +21,36 @@
     display: block;
     flex-wrap: wrap;
     padding-bottom: 72px;
-    padding-top: 99px;
+    padding-top: 110px;
 
     .features__item {
       display: flex;
 
-      &-link {
+      .features__item-link {
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
 
-        &-img {
+        .features__item-img {
           display: block;
           text-align: center;
           width: 115px;
           margin-left: 90px;
           margin-bottom: 64px;
         }
-        &-text {
+        .features__item-text {
           display: block;
           width: 406px;
           margin-left: 24px;
 
-          &-title {
+          .features__item-title {
             display: flex;
             font-size: 16px;
             line-height: 21px;
             color: #323232;
           }
 
-          &-subtitle {
+          .features__item-subtitle {
             font-size: 14px;
             line-height: 21px;
             display: flex;
