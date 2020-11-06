@@ -13,9 +13,6 @@
     @include central;
     flex-wrap: wrap;
     text-align: center;
-    //width: 861px;
-    //height: 64px;
-
     color: #323232;
     font-size: 21px;
     line-height: 32px;
@@ -37,15 +34,14 @@
         border: 1px solid #d3d3d3;
         border-radius: 4px;
         margin: 13px 5px 70px 0;
-        border: 1px solid #d3d3d3;
         text-decoration: none;
       }
 
       .revolutionary__img-text {
         display: flex;
         flex-wrap: wrap;
-        color: black;
-        background: #F4F4F4;
+        color: #000;
+        background: $color_grey_bg;
 
         .revolutionary__img {
           padding: 0 5px;
@@ -62,61 +58,13 @@
 
       .revolutionary__details {
         @include central;
-        border-left: 1px solid black;
+        border-left: 1px solid #000;
         height: 21px;
         font-size: 10px;
-        color: black;
+        color: #000;
         padding: 0 5px;
         text-decoration: none;
       }
     }
   }
 }
-
-
-
-
-
-//.here_is_what_you_get {
-//  height: 711px;
-//  background: $color_grey_1;
-//  aside {
-//    float: right;
-//    .here_is {
-//      font-weight: bold;
-//      font-size: 48px;
-//      margin-top: 94px;
-//      margin-bottom: 20px;
-//      color: #8D81AC;
-//    }
-//  }
-//}
-//.here_is-item_top {
-//  padding-top: 110px;
-//}
-//.here_is-item {
-//  display: flex;
-//  margin-bottom: 40px;
-//  padding-right: 193px;
-//  .image {
-//    display: inline-table;
-//    width: 115px;
-//    height: 95px;
-//    margin-left: 106px;
-//  }
-//}
-//.here_is_text_text {
-//  margin-left: 44px;
-//  padding: 0;
-//  .here_is-title {
-//    margin: 0 auto;
-//    font-size: 16px;
-//    color: $color_3;
-//  }
-//  .here_is-text {
-//    font-size: 14px;
-//    color: #848E97;
-//  }
-//}
-
-

@@ -1,8 +1,8 @@
 .pricing__wrapper {
+  display: grid;
   background-image: url("../../img/fork_pricining/fork_bg.png");
   background-size: cover;
   height: 847px;
-  display: grid;
   padding-top: 83px;
   margin: 0 auto;
 
@@ -10,7 +10,7 @@
     font-weight: bold;
     font-size: 48px;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
   }
 
   .pricing-list__wrapper {
@@ -19,71 +19,73 @@
 
     .pricing-list__item {
       display: inline-grid;
-      margin-right: 15px;
-      text-align: center;
+      background: rgba(128, 128, 128, 0.5);
       width: 257px;
       height: 457px;
-      border: 2px solid yellow;
-      background: rgba(128, 128, 128, 0.5);
+      margin-right: 15px;
+      text-align: center;
 
       &-big {
         display: inline-grid;
-        margin-right: 15px;
-        text-align: center;
-        border: 2px solid yellow;
         background: #463048;
-        position: relative;
-        top: -47px;
         width: 299px;
         height: 560px;
+        margin-right: 15px;
+        text-align: center;
+        position: relative;
+        top: -47px;
       }
     }
 
     .pricing-list__item-category {
         @include central;
+        background: rgba(255, 255, 255, 0.1);
+        height: 97px;
         font-size: 24px;
         text-transform: uppercase;
-        color: #FFFFFF;
-        height: 97px;
-        background: rgba(255, 255, 255, 0.1);
+        color: $text-color;
+
+
 
       &-big {
         @include central;
+        height: 111px;
         font-size: 24px;
         text-transform: uppercase;
-        color: #FFFFFF;
-        height: 111px;
+        color: #FFF;
+
       }
     }
 
     .pricing-list__item-cost {
       display: grid;
-      align-items: center;
       height: 360px;
+      align-items: center;
+
 
       &-big {
         display: grid;
-        align-items: center;
         height: 449px;
+        align-items: center;
         margin-bottom: 60px;
       }
 
       &-inner {
         @include central;
-        align-items: start;
         font-size: 60px;
         line-height: 90px;
+        align-items: start;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #FFF;
 
         &-big {
           @include central;
           font-size: 82px;
-          align-items: start;
           line-height: 90px;
           margin-bottom: 10px;
+          align-items: start;
           text-transform: uppercase;
-          color: #FFFFFF;
+          color: #FFF;
         }
       }
 
@@ -94,15 +96,15 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 30px;
-        color: #FFFFFF;
+        color: #FFF;
 
         &::after {
           content: '';
           position: absolute;
           display: block;
+          background: $purple-color;
           width: 60px;
           height: 5px;
-          background: #8D81AC;
           top: 70px;
           right: 95px;
           }
@@ -114,7 +116,7 @@
           text-align: center;
           text-transform: uppercase;
           margin-bottom: 30px;
-          color: #FFFFFF;
+          color: #FFF;
 
           &::after {
             content: '';
@@ -122,7 +124,7 @@
             display: block;
             width: 60px;
             height: 5px;
-            background: #8D81AC;
+            background: $purple-color;
             top: 70px;
             right: 120px;
           }
@@ -136,7 +138,7 @@
         height: 35px;
         margin-top: 70px;
         margin-bottom: 36px;
-        color: #FFFFFF;
+        color: #FFF;
 
       &-big {
         margin-bottom: 100px;
@@ -144,6 +146,7 @@
     }
 
       .pricing-list__item-btn {
+        background: rgba(255, 255, 255, 0.1);
         width: 163px;
         height: 45px;
         border: none;
@@ -153,8 +156,7 @@
         margin-bottom: 30px;
         margin-left: 17%;
         text-transform: uppercase;
-        background: rgba(255, 255, 255, 0.1);
-        color: #FFFFFF;
+        color: #FFF;
 
         &-big {
           margin-left: 22%;
@@ -162,212 +164,4 @@
       }
     }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-$color_white: #FFFFFF;
-$color_bg: #8D81AC;
-
-.fork_subscription_pricing {
-  display: grid;
-  height: 847px;
-  background-image: url("../../img/fork_pricining/fork_bg.png");
-  background-size: cover;
-  padding-top: 83px;
-}
-.fork_title {
-  margin: 0 auto;
-  padding-bottom: 61px;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 50px;
-  text-transform: capitalize;
-  text-align: center;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.cards {
-  display: flex;
-  justify-content: center;
-}
-.block {
-  margin-right: 15px;
-  text-align: center;
-  width: 257px;
-  height: 457px;
-  background: rgba(215, 207, 207, 0.2);
-}
-.students_title {
-  display: flex;
-}
-.students {
-  margin: 0 auto;
-  display: flex;
-  width: 257px;
-  height: 97px;
-  font-size: 24px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  background: rgba(215, 207, 207, 0.3);
-  color: $color_white;
-}
-.price {
-  position: relative;
-
-}
-.dollar {
-  margin: 0 auto;
-  padding-top: 30px;
-  font-size: 60px;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.per_month {
-  font-size: 14px;
-  padding-top: 20px;
-  margin: 0 auto;
-  text-transform: uppercase;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.per_month:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: $color_bg;
-  top: 175px;
-}
-.license {
-  width: 257px;
-  height: 44px;
-  font-size: 16px;
-  padding-top: 79px;
-  margin: 0 auto;
-  text-transform: capitalize;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.purchase {
-  width: 163px;
-  height: 45px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 15px;
-  margin-top: 25px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  background: rgba(215, 207, 207, 0.2);
-  color: $color_white;
-
-}
-.students_title_agency {
-  /*background: #000000;*/
-  /*mix-blend-mode: normal;*/
-  /*opacity: 0.11;*/
-}
-.students_agency {
-  width: 299px;
-  height: 111px;
-  background: rgba(55, 54, 54, 0.4);
-}
-.block_agency {
-  background: #463048;
-  position: relative;
-  top: -47px;
-  width: 299px;
-  height: 560px;
-  margin-right: 15px;
-}
-.dollar_agency {
-  margin: 0 auto;
-  padding-top: 12px;
-  font-size: 82px;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.license_agency {
-  width: 257px;
-  height: 44px;
-  font-size: 16px;
-  padding-top: 79px;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: capitalize;
-
-  color: $color_white;
-  @extend %flex_center;
-}
-.purchase_agency {
-  position: absolute;
-  top: 320px;
-  right: 52px;
-  width: 190px;
-  height: 52px;
-
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 15px;
-  margin-top: 36px;
-  margin-bottom: 37px;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: $color_white;
-}
-.per_month_agency {
-  position: relative;
-  top: -10px;
-}
-.per_month_agency:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: $color_bg;
-  top: 85px;
 }
