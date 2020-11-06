@@ -4,6 +4,7 @@
     background-image: url('../../img/sections/about-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: $purple-color;
     padding: 6.25rem 0 0 0 0;
 
     &__center {
@@ -68,6 +69,7 @@
             height: 2px;
             background-color: #645766;
             bottom: -24px;
+            left: calc(100% - 90%);
         }
     }
     

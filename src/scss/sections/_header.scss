@@ -20,9 +20,10 @@
     &__body {
         position: relative;
         z-index: 2;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 25% 60% 15%;
+        grid-template-rows: repeat(2, 1fr);
+        
     }
 
     &__logo {
@@ -61,13 +62,16 @@
         };
 
     }
+
     &__burger {
-        // display: none;     
+        display: none;     
+        
     }
 
     &__menu {
         display: flex;
         align-items: center;
+        justify-self: end;
     }
 
     &__list {
@@ -93,11 +97,11 @@
     &__button {
         width: 145px;
         height: 38px;
-        border-radius: 40px;
         @include button-styles;
         background-color: $purple-color;
         color: #fff;
         font-size: 1rem;
+        justify-self: end;
     }
 
     &__button:hover {
