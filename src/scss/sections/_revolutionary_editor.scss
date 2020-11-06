@@ -1,145 +1,122 @@
-
 .container {
-
-}
-.revolutionary__title {
-
-}
-.revolutionary__subtitle {
-
-}
-.evolutionary__list {
-
-}
-.revolutionary__item {
-
-}
-.revolutionary__icon {
-
-}
-.revolutionary__img {
-
-}
-.revolutionary__text {
-
-}
-.revolutionary__details {
-
-}
-
-
-
-
-
-
-
-
-.revolutionary_editor {
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .unlimited {
-    color: #848E97;
-    font-size: 14px;
-  }
-
-  .revo_editor {
+    margin: 0 auto;
+  .revolutionary__title {
     color: #635C73;
     font-weight: bold;
     font-size: 54px;
     text-transform: uppercase;
+    text-align: center;
     margin-top: 66px;
   }
-
-  .aenean_text {
+  .revolutionary__subtitle {
     font-family: 'Lato', sans-serif;
-    height: 64px;
-    width: 861px;
-    color: $color_3;
+    @include central;
+    flex-wrap: wrap;
+    text-align: center;
+    //width: 861px;
+    //height: 64px;
+
+    color: #323232;
     font-size: 21px;
+    line-height: 32px;
     margin-top: 35px;
   }
 
-  .git_button {
-    display: inline-flex;
+  .revolutionary__list {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid $color_grey_2;
-    border-radius: 4px;
-    margin-right: 5px;
-    margin-bottom: 70px;
+    text-align: center;
 
-    .watch {
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: bold;
-      border-right: 1px solid $color_grey_2;
-      padding: 5px 20px 0 20px;
-      background: $color_grey_1;
+    .revolutionary__item {
+      display: flex;
+      flex-wrap: wrap;
 
-      .octicon {
-        padding-right: 5px;
+      .revolutionary__icon {
+        @include central;
+        border: 1px solid #d3d3d3;
+        border-radius: 4px;
+        margin: 13px 5px 70px 0;
+        border: 1px solid #d3d3d3;
+        text-decoration: none;
+      }
+
+      .revolutionary__img-text {
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        background: #F4F4F4;
+
+        .revolutionary__img {
+          padding: 0 5px;
+        }
+
+        .revolutionary__text {
+          @include central;
+          text-decoration: none;
+          font-size: 10px;
+          font-weight: bold;
+          padding-right: 8px;
+        }
+      }
+
+      .revolutionary__details {
+        @include central;
+        border-left: 1px solid black;
+        height: 21px;
+        font-size: 10px;
+        color: black;
+        padding: 0 5px;
+        text-decoration: none;
       }
     }
+  }
+}
 
-    .quantity {
-      align-items: center;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 5px;
 
-      @extend %flex_center;
-    }
 
-    .button-watch {
-      display: inline-flex;
-      text-decoration: none;
-      color: black;
-    }
-  }
-}
-.here_is_what_you_get {
-  height: 711px;
-  background: $color_grey_1;
-  aside {
-    float: right;
-    .here_is {
-      font-weight: bold;
-      font-size: 48px;
-      margin-top: 94px;
-      margin-bottom: 20px;
-      color: #8D81AC;
-    }
-  }
-}
-.here_is-item_top {
-  padding-top: 110px;
-}
-.here_is-item {
-  display: flex;
-  margin-bottom: 40px;
-  padding-right: 193px;
-  .image {
-    display: inline-table;
-    width: 115px;
-    height: 95px;
-    margin-left: 106px;
-  }
-}
-.here_is_text_text {
-  margin-left: 44px;
-  padding: 0;
-  .here_is-title {
-    margin: 0 auto;
-    font-size: 16px;
-    color: $color_3;
-  }
-  .here_is-text {
-    font-size: 14px;
-    color: #848E97;
-  }
-}
+
+
+//.here_is_what_you_get {
+//  height: 711px;
+//  background: $color_grey_1;
+//  aside {
+//    float: right;
+//    .here_is {
+//      font-weight: bold;
+//      font-size: 48px;
+//      margin-top: 94px;
+//      margin-bottom: 20px;
+//      color: #8D81AC;
+//    }
+//  }
+//}
+//.here_is-item_top {
+//  padding-top: 110px;
+//}
+//.here_is-item {
+//  display: flex;
+//  margin-bottom: 40px;
+//  padding-right: 193px;
+//  .image {
+//    display: inline-table;
+//    width: 115px;
+//    height: 95px;
+//    margin-left: 106px;
+//  }
+//}
+//.here_is_text_text {
+//  margin-left: 44px;
+//  padding: 0;
+//  .here_is-title {
+//    margin: 0 auto;
+//    font-size: 16px;
+//    color: $color_3;
+//  }
+//  .here_is-text {
+//    font-size: 14px;
+//    color: #848E97;
+//  }
+//}
 
 

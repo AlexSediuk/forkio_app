@@ -2,30 +2,31 @@
 @import "mixins";
 @import 'reset';
 @import "./sections/revolutionary_editor";
+@import "./sections/here_is_what_you_get";
 @import "./sections/fork_subscription_pricing";
 
 
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
+  margin: 0;
 }
-//.revolutionary_editor-container {
+//.container {
 //  max-width: 1200px;
 //  margin: 0 auto;
 //  padding: 0 10px;
 //}
 //@media (max-width: 1200px) {
-//  .revolutionary_editor-container {
+//  .container {
 //    max-width: 992px;
 //  }
 //}
 //@media (max-width: 993px) {
-//  .revolutionary_editor-container {
+//  .container {
 //    max-width: 481px;
 //  }
 //}
 //@media (max-width: 481px) {
-//  .revolutionary_editor-container {
+//  .container {
 //    max-width: 320px;
 //  }
 //}
