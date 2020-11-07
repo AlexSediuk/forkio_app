@@ -1,18 +1,18 @@
-
 @import 'variables';
 @import 'mixins';
 @import 'reset';
 @import './sections/header';
 @import './sections/about';
+@import "./sections/revolutionary_editor";
+@import "./sections/here_is_what_you_get";
+@import "./sections/fork_subscription_pricing";
 @import 'media';
-
 
 body {
     font-family: 'Montserrat', sans-serif;
     // font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 a {
@@ -28,7 +28,7 @@ a {
     max-width: 85%;
     margin: 0 auto;
     padding: 0 10px
-}
+
 
 // ======== SECTION INTRO
 
@@ -39,7 +39,6 @@ a {
     width: 100%;
     background-position: center;
     
-
     &__info {
         display: flex;
         flex-direction: column;
@@ -54,18 +53,8 @@ a {
             flex-direction: column;
             text-align: center;
 
-            &-title {
-                font-size: 5.125rem;
-                font-weight: bold;
-                margin-bottom: 1.1rem;
-            }
 
-            &-subtitle {
-                color: $purple-color;
-                font-weight: bold;
-                font-size: 1.875rem;
-                padding-bottom: 1rem;
-            }
+}
 
             &-property {
                 color: $grey-color;
@@ -105,3 +94,4 @@ a {
         }
     }
 }
+
