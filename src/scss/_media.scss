@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+    background: yellow;
+
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    background: #00CBF6;
+    .revolutionary__title {
+      font-size: 42px;
+    }
+
+  }
+.features__title {
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+}
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+    background: #6c71c4;
+    .revolutionary__title {
+      font-size: 26px;
+    }
+  }
+
+}

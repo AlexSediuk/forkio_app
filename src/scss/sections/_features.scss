@@ -3,10 +3,6 @@
   height: 711px;
   margin: 0;
 
-  aside  {
-    float: right;
-  }
-
   .features__title {
     display: flex;
     justify-content: flex-end;
@@ -15,6 +11,9 @@
     font-weight: bold;
     font-size: 42px;
     color: $purple-color;
+  }
+  .features__item-editor {
+
   }
 
   .features__list {
@@ -26,24 +25,24 @@
     .features__item {
       display: flex;
 
-      .features__item-link {
-        display: flex;
+      &-link {
+        display: contents;
         flex-wrap: wrap;
         text-decoration: none;
 
-        .features__item-img {
+        &-img {
           display: block;
           text-align: center;
-          width: 115px;
+          //width: 115px;
           margin-left: 90px;
           margin-bottom: 64px;
         }
-        .features__item-text {
-          display: block;
-          width: 406px;
+        &-text {
+          display: inline-table;
+          //width: 406px;
           margin-left: 24px;
 
-          .features__item-title {
+          &-title {
             display: flex;
             font-size: 16px;
             line-height: 21px;

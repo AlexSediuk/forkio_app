@@ -1,7 +1,7 @@
 .pricing__wrapper {
   display: grid;
   background-image: url("../../img/fork_pricining/fork_bg.png");
-  background-size: cover;
+  background-size: contain;
   height: 847px;
   padding-top: 83px;
   margin: 0 auto;
@@ -20,7 +20,7 @@
     .pricing-list__item {
       display: inline-grid;
       background: rgba(128, 128, 128, 0.5);
-      width: 257px;
+      //width: 257px;
       height: 457px;
       margin-right: 15px;
       text-align: center;
@@ -28,7 +28,7 @@
       &-big {
         display: inline-grid;
         background: #463048;
-        width: 299px;
+        //width: 299px;
         height: 560px;
         margin-right: 15px;
         text-align: center;
@@ -99,11 +99,9 @@
         color: #FFF;
 
         &::after {
-          content: '';
-          position: absolute;
-          display: block;
+          @include pseudo;
           background: $purple-color;
-          width: 60px;
+          //width: 60px;
           height: 5px;
           top: 70px;
           right: 95px;
@@ -119,10 +117,8 @@
           color: #FFF;
 
           &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 60px;
+            @include pseudo;
+            //width: 60px;
             height: 5px;
             background: $purple-color;
             top: 70px;
@@ -147,7 +143,7 @@
 
       .pricing-list__item-btn {
         background: rgba(255, 255, 255, 0.1);
-        width: 163px;
+        //width: 163px;
         height: 45px;
         border: none;
         border-radius: 40px;
