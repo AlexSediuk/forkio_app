@@ -9,7 +9,7 @@
   .features__title {
     display: flex;
     justify-content: flex-end;
-    margin: 0 170px 19px 0;
+    margin: 0 100px 19px 0;
     padding-top: 94px;
     font-weight: bold;
     font-size: 48px;
@@ -19,17 +19,16 @@
   .features__list {
     display: block;
     flex-wrap: wrap;
-    padding-bottom: 72px;
-    padding-top: 110px;
 
     .features__item {
       display: flex;
 
       &-icon {
         display: block;
-        //text-align: center;
-        width: 115px;
-        //margin-left: 90px;
+        text-align: right;
+        align-content: end;
+        //width: 115px;
+        margin-left: 90px;
         margin-bottom: 64px;
       }
 
@@ -56,7 +55,7 @@
   }
 
   .features__img {
-    float: right;
-    //width: 100%;
+    position: relative;
+    right: 0;
   }
 }
