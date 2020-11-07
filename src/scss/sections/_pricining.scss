@@ -1,13 +1,15 @@
 .pricing {
   background-image: url("../../img/fork_pricining/fork_bg.png");
   background-size: contain;
-}
-.pricing__wrapper {
-  display: grid;
 
-  //height: 847px;
-  padding-top: 83px;
-  margin: 0 auto;
+  &__wrapper {
+    display: grid;
+
+    //height: 847px;
+    padding-top: 83px;
+    margin: 0 auto;
+}
+
 
   .pricing__title {
     font-weight: bold;
