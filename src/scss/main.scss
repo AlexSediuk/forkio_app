@@ -21,14 +21,11 @@ a {
     cursor: pointer;
 }
 
-.wrapper {
-    max-height: 100%;
-
 .container {
     max-width: 85%;
     margin: 0 auto;
     padding: 0 10px
-
+}
 
 // ======== SECTION INTRO
 
@@ -44,6 +41,7 @@ a {
         flex-direction: column;
         align-items: center;
         margin-bottom: 30%;
+    }
         
 
         &-text {
@@ -52,16 +50,16 @@ a {
             display: flex;
             flex-direction: column;
             text-align: center;
+        }
 
 
-}
 
             &-property {
                 color: $grey-color;
             }
         }
-    }
-}
+    
+
 
     .action {
         display: flex;
@@ -93,5 +91,3 @@ a {
             font-size: 0.875rem;
         }
     }
-}
-
