@@ -7,7 +7,7 @@
     font-size: 54px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 66px;
+    padding-top: 129px;
   }
 
   .revolutionary__subtitle {
@@ -32,43 +32,40 @@
       display: flex;
       flex-wrap: wrap;
 
-      &-link {
+      .revolutionary__item-link {
         @include central;
         border: 1px solid #d3d3d3;
         border-radius: 4px;
         margin: 13px 5px 13px 0;
         text-decoration: none;
-      }
 
-      &-icon {
-        display: flex;
-        flex-wrap: wrap;
-        color: #000;
-        background: $color_grey_bg;
-      }
+        .revolutionary__item-icon {
+          display: flex;
+          flex-wrap: wrap;
+          color: #000;
+          background: $color_grey_bg;
 
-      &-img {
-        padding: 0 3px;
-        margin-left: 5px;
-      }
-
-      &-text {
-        @include central;
-        text-decoration: none;
-        font-size: 10px;
-        font-weight: bold;
-        padding-right: 20px;
-        padding-left: 10px;
-      }
-
-      &-details {
-        @include central;
-        border-left: 1px solid #000;
-        //height: 21px;
-        font-size: 10px;
-        color: #000;
-        padding: 0 5px;
-        text-decoration: none;
+          .revolutionary__item-img {
+            padding: 0 3px;
+            margin-left: 5px;
+          }
+          .revolutionary__item-text {
+            @include central;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+            padding-right: 20px;
+            padding-left: 10px;
+            border-right: 1px solid #d3d3d3;
+          }
+        }
+        .revolutionary__item-details {
+          @include central;
+          font-size: 10px;
+          color: #000;
+          padding: 0 5px;
+          text-decoration: none;
+        }
       }
     }
   }
