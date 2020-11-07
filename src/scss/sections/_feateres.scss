@@ -1,6 +1,5 @@
 .features__wrapper {
   background: $color_grey_bg;
-  height: 711px;
   margin: 0;
 
   .features__title {
@@ -12,9 +11,9 @@
     font-size: 42px;
     color: $purple-color;
   }
-  .features__item-editor {
-
-  }
+  //.features__item-editor {
+  //  width: 100%;
+  //}
 
   .features__list {
     display: block;
@@ -37,19 +36,19 @@
           margin-left: 90px;
           margin-bottom: 64px;
         }
-        &-text {
+        .features__item-text-block {
           display: inline-table;
           //width: 406px;
           margin-left: 24px;
 
-          &-title {
+          .features__item-text-block-title {
             display: flex;
             font-size: 16px;
             line-height: 21px;
             color: #323232;
           }
 
-          .features__item-subtitle {
+          .features__item-text-block-subtitle {
             font-size: 14px;
             line-height: 21px;
             display: flex;

@@ -2,7 +2,7 @@
 @import "mixins";
 @import 'reset';
 @import "./sections/revolutionary";
-@import "./sections/features";
+@import "./sections/feateres";
 @import "./sections/pricining";
 @import "media";
 
@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 .container {
-  max-width: 1200px;
+  width: 85%;
   margin: 0 auto;
   padding: 0 10px;
 }
