@@ -95,12 +95,12 @@
     }
 
     &__button {
-        width: 145px;
-        height: 38px;
+        padding: .5rem 2.3rem;
         @include button-styles;
         background-color: $purple-color;
         color: #fff;
         font-size: 1rem;
+        line-height: 17px;
         justify-self: end;
     }
 
