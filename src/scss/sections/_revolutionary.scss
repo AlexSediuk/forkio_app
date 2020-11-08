@@ -1,0 +1,72 @@
+.revolutionary {
+
+  &__title {
+    color: #635C73;
+    font-weight: bold;
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 129px;
+  }
+
+  &__subtitle {
+    font-family: 'Lato', sans-serif;
+    @include central;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #323232;
+    font-size: 21px;
+    line-height: 32px;
+    margin-top: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-link {
+      @include central;
+      border: 1px solid #d3d3d3;
+      border-radius: 4px;
+      margin: 13px 5px 13px 0;
+      text-decoration: none;
+    }
+
+    &-icon {
+      display: flex;
+      flex-wrap: wrap;
+      color: #000;
+      background: $color_grey_bg;
+    }
+
+    &-img {
+      padding: 0 3px;
+      margin-left: 5px;
+    }
+
+    &-text {
+      @include central;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: bold;
+      padding-right: 20px;
+      padding-left: 10px;
+      border-right: 1px solid #d3d3d3;
+    }
+
+    &-details {
+      @include central;
+      font-size: 10px;
+      color: #000;
+      padding: 0 5px;
+      text-decoration: none;
+    }
+  }
+}
