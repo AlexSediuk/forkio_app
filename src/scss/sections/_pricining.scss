@@ -4,57 +4,54 @@
 
   &__wrapper {
     display: grid;
-
-    //height: 847px;
     padding-top: 83px;
     margin: 0 auto;
-}
+  }
 
-
-  .pricing__title {
+  &__title {
     font-weight: bold;
     font-size: 48px;
     text-align: center;
     color: #FFF;
   }
+}
 
-  .pricing-list__wrapper {
-    display: inline-flex;
-    justify-content: center;
-    margin: 112px 0;
+.pricing-list {
+  display: inline-flex;
+  justify-content: center;
+  margin: 112px 0;
 
-    .pricing-list__item {
-      background: rgba(128, 128, 128, 0.5);
-      width: 20%;
+  &__item {
+    background: rgba(128, 128, 128, 0.5);
+    width: 20%;
+    margin-right: 15px;
+    text-align: center;
+
+    &-big {
+      display: inline-grid;
+      background: #463048;
+      //width: 299px;
+      //height: 560px;
       margin-right: 15px;
       text-align: center;
-
-      &-big {
-        display: inline-grid;
-        background: #463048;
-        //width: 299px;
-        //height: 560px;
-        margin-right: 15px;
-        text-align: center;
-        position: relative;
-        top: -47px;
-      }
+      position: relative;
+      top: -47px;
     }
 
-    .pricing-list__item-category {
-        @include central;
-        background: rgba(255, 255, 255, 0.1);
-        font-size: 24px;
-        padding: 35px 0;
-        text-transform: uppercase;
-        color: #FFF;
+    &-category {
+      @include central;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 24px;
+      padding: 35px 0;
+      text-transform: uppercase;
+      color: #FFF;
 
       &-big {
         padding: 45px 0;
       }
     }
 
-    .pricing-list__item-cost {
+    &-cost {
       display: grid;
       align-items: center;
 
@@ -82,70 +79,70 @@
           color: #FFF;
         }
       }
+    }
 
-      .pricing-list__item-subtitle {
+    &-subtitle {
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      padding-top: 20px;
+      color: #FFF;
+
+      &::after {
+        @include pseudo;
+        background: $purple-color;
+        width: 25%;
+        height: 5px;
+        top: 70px;
+        right: 115px;
+      }
+
+      &-big {
         position: relative;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 30px;
-        padding-top: 20px;
         color: #FFF;
 
         &::after {
-          @include pseudo;
-          background: $purple-color;
-          width: 25%;
-          height: 5px;
           top: 70px;
-          right: 90px;
-          }
-
-        &-big {
-          position: relative;
-          font-size: 14px;
-          line-height: 16px;
-          text-align: center;
-          text-transform: uppercase;
-          margin-bottom: 30px;
-          color: #FFF;
-
-          &::after {
-            top: 70px;
-            right: 90px;
-          }
+          right: 115px;
         }
       }
+    }
 
-    .pricing-list__item-advantage {
-        font-size: 16px;
-        line-height: 18px;
-        text-align: center;
-        margin: 75px 0;
-        color: #FFF;
+    &-advantage {
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      margin: 75px 0;
+      color: #FFF;
 
       &-big {
         margin-bottom: 100px;
       }
     }
 
-      .pricing-list__item-btn {
-        background: rgba(255, 255, 255, 0.1);
-        border: none;
-        border-radius: 40px;
-        text-decoration: none;
-        font-size: 15px;
-        margin: 0 47px;
-        padding: 15px 0;
-        text-transform: uppercase;
-        color: #FFF;
+    &-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 15px;
+      margin: 0 47px;
+      padding: 15px 0;
+      text-transform: uppercase;
+      color: #FFF;
 
-        &-big {
-          position: relative;
-          bottom: -24px;
-          margin-left: 22%;
-        }
+      &-big {
+        position: relative;
+        bottom: -24px;
+        margin-left: 22%;
       }
     }
   }

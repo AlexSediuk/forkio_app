@@ -15,6 +15,9 @@
     font-size: 48px;
     color: $purple-color;
   }
+  &__img {
+
+  }
 
   &__list {
     display: block;
@@ -50,10 +53,5 @@
         color: $grey-color;
       }
     }
-  }
-
-  .features__img {
-    position: relative;
-    right: 0;
   }
 }
