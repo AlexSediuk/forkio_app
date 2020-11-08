@@ -36,13 +36,12 @@ a {
     width: 100%;
     background-position: center;
     
+
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30%;
-    }
-        
 
         &-text {
             color: #fff;
@@ -50,17 +49,27 @@ a {
             display: flex;
             flex-direction: column;
             text-align: center;
-        }
+    
+            &-title {
+                color: #fff;
+                font-size: 5rem;
+                line-height: 5rem;
+                font-weight: bold;
+                margin-bottom: 1.1rem;
+            }
 
-
+            &-subtitle {
+                margin-bottom: 1.1rem;
+            };
 
             &-property {
                 color: $grey-color;
-            }
+            }                        
+    }
+        
+        }
         }
     
-
-
     .action {
         display: flex;
         flex-direction: column;
