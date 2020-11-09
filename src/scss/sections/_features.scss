@@ -3,44 +3,47 @@
   margin: 0;
 
   &__wrapper {
-   display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "cc aa"
+    "dd bb";
   }
 
   &__title {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 100px 19px 0;
-    padding-top: 94px;
+    display: table;
+    grid-area: aa;
+    border: 1px solid yellow;
     font-weight: bold;
     font-size: 48px;
     color: $purple-color;
   }
   &__img {
-
+    display: grid;
+    border: 1px solid red;
+    grid-area: bb;
   }
 
   &__list {
-    display: block;
-    flex-wrap: wrap;
+
   }
 
   &__item {
-    display: flex;
+    display: -webkit-box;
 
     &-icon {
-      display: block;
-      text-align: right;
-      align-content: end;
-      //width: 115px;
-      margin-left: 90px;
-      margin-bottom: 64px;
+      display: grid;
+      border: 1px solid blue;
+      grid-area: cc;
+      text-align: left;
     }
     &-text-block {
-      display: block;
+      display: grid;
+      border: 1px solid green;
+      grid-area: dd;
       margin-left: 24px;
 
       &-title {
-        display: flex;
         font-size: 16px;
         line-height: 21px;
         color: #323232;
@@ -48,8 +51,6 @@
       &-subtitle {
         font-size: 14px;
         line-height: 21px;
-        display: flex;
-        align-items: center;
         color: $grey-color;
       }
     }
