@@ -5,13 +5,13 @@
 
 @media (max-width: 1200px) {
   .container {
-    background: yellow;
+    // background: yellow;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    background: #00CBF6;
+    // background: #00CBF6;
 
     .revolutionary__title {
       font-size: 42px;
@@ -36,7 +36,7 @@
 @media (max-width: 768px) {
 
     .container {
-        background: #6c71c4;
+        // background: #6c71c4;
         .revolutionary__title {
             font-size: 26px;
         }
@@ -60,7 +60,7 @@
             display: grid;
             grid-template-columns: 20% 20% 40%;
             grid-template-rows: repeat(2, 1fr);
-            margin: 0 auto;
+            
         }
 
         &__logo {
@@ -68,18 +68,19 @@
         }
 
         &__menu {
-            display: grid;
+            // display: grid;
             // grid-template-columns: 20% 20% 40%;
             // grid-template-rows: repeat(2, 1fr);
             grid-row: 2;
             grid-column: 3/3;
             width: 150%;
-            // margin: auto;
         }
 
         &__list {
             display: flex;
             justify-content: space-between;
+            // margin-right: 0;
+            width: 100%;
             margin-right: 0;
         }
 
@@ -95,6 +96,8 @@
             grid-column: 4/4;
             justify-self: end;
             line-height: 16px;
+            max-height: 41px;
+            min-width: 145px;
         }
 
     }
@@ -112,6 +115,21 @@
         }
 
         &__logo {
+            
+        }
+
+        &__menu {
+            position: relative;
+        }
+
+        &__list {
+            position: absolute;
+        }
+
+        &__link {
+            padding: 1.5rem 2.5rem;
+            background-color: $mobile-nav-bgc;
+            border-bottom : 1px solid #ffff3d;
             
         }
 
@@ -204,6 +222,8 @@
             grid-column: 2/3;
             justify-self: center;
             line-height: 15px;
+            max-height: 41px;
+            min-width: 119px;
         }
     }
 }
