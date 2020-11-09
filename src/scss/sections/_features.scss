@@ -3,23 +3,24 @@
   margin: 0;
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "cc aa"
-    "dd bb";
+    display: flex;
+    
   }
 
-  &__title {
-    display: table;
-    grid-area: aa;
+  &__desc-title {
+
     border: 1px solid yellow;
     font-weight: bold;
     font-size: 48px;
     color: $purple-color;
   }
+  &__tab-title {
+	border: 1px solid yellow;
+    font-weight: bold;
+    font-size: 48px;
+    color: $purple-color;
+  }
   &__img {
-    display: grid;
     border: 1px solid red;
     grid-area: bb;
   }
@@ -29,16 +30,16 @@
   }
 
   &__item {
-    display: -webkit-box;
+    display: flex;
 
     &-icon {
-      display: grid;
+      
       border: 1px solid blue;
       grid-area: cc;
       text-align: left;
     }
     &-text-block {
-      display: grid;
+    
       border: 1px solid green;
       grid-area: dd;
       margin-left: 24px;
