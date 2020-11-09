@@ -8,48 +8,51 @@
   }
 
   &__desc-title {
-
-    border: 1px solid yellow;
     font-weight: bold;
     font-size: 48px;
     color: $purple-color;
   }
+
   &__tab-title {
-	  display: none;
-	border: 1px solid yellow;
+    display: none;
     font-weight: bold;
     font-size: 48px;
     color: $purple-color;
+  }
+
+  &__title-img {
+    margin-top: 90px;
   }
   &__img {
-    border: 1px solid red;
-    grid-area: bb;
+
   }
 
   &__list {
-
+    margin-top: 98px;
   }
 
   &__item {
-    display: flex;
+    display: -webkit-box;
 
     &-icon {
-      
-      border: 1px solid blue;
-      grid-area: cc;
-      text-align: left;
+      margin-left: 60px;
+      width: 15%;
+      text-align: center;
     }
+
     &-text-block {
-    
-      border: 1px solid green;
+      width: 65%;
       grid-area: dd;
       margin-left: 24px;
+      margin-bottom: 35px;
 
       &-title {
+        margin-bottom: 17px;
         font-size: 16px;
         line-height: 21px;
         color: #323232;
       }
+
       &-subtitle {
         font-size: 14px;
         line-height: 21px;
