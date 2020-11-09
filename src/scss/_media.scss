@@ -7,6 +7,9 @@
   .container {
     background: yellow;
   }
+  .features__tab-title {
+	display: none;
+}
 }
 
 @media (max-width: 992px) {
@@ -17,7 +20,8 @@
       font-size: 42px;
     }
   .features__wrapper {
-    background: rgba(0, 0, 0, 0.0001);
+	background: rgba(0, 0, 0, 0.0001);
+	flex-wrap: wrap;
 
       .features__title {
           font-size: 42px;
@@ -25,6 +29,9 @@
           margin: 0;
       }
     }
+  }
+  .features__desc-title {
+	  display: none;
   }
 
   .features__img {

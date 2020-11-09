@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_variables.scss"],"sourcesContent":["$header-bcg: #27262A;\r\n$purple-color: #8D81AC;\r\n$mobile-nav-bgc: #333333;\r\n$grey-color: #848E97;\r\n$color-grey-bg: #F4F4F4;\r\n\r\n\r\n\r\n$mobile: 320px;\r\n$tablet: 481px;\r\n$desktop: 993px;\r\n"],"file":"_variables.css"}
