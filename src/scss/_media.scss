@@ -32,9 +32,19 @@
       margin-bottom: 50px;
     }
     &__img {
-      margin-left: 8%;
+      margin-left: 3%;
       width: 100%;
     }
+  }
+  .pricing-list {
+    margin-top: 39px;
+
+  }
+  .pricing__title {
+    font-size: 42px;
+  }
+  .pricing-list__item {
+    margin: 0 15px 71px 0;
   }
 }
 
@@ -84,6 +94,17 @@
     &__list {
       margin: 0;
     }
+  }
+  .pricing__title {
+    font-size: 28px;
+
+  }
+  .pricing-list {
+    margin-top: 32px;
+
+  }
+  .pricing-list__item {
+    margin: 18px 0 0 0;
   }
 }
 
