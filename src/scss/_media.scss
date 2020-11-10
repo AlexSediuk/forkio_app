@@ -12,71 +12,78 @@
   }
   .features {
     background: rgba(0, 0, 0, 0.0001);
-    .features__wrapper {
+
+    &__wrapper {
       background: rgba(0, 0, 0, 0.0001);
       flex-wrap: wrap;
-
-      .features__title {
-        font-size: 42px;
-        justify-content: center;
-        margin: 0;
-      }
+    }
+    &__title {
+      font-size: 42px;
+      justify-content: center;
+      margin: 0;
+    }
+    &__desc-title {
+      display: none;
+    }
+    &__tab-title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__img {
+      margin-left: 8%;
+      width: 100%;
     }
   }
-  .features__item {
-    // width: 73%;
-  }
-  .features__desc-title {
-    display: none;
-  }
-  .features__tab-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  .features__img {
-    margin-left: 1%;
-    width: 100%;
-  }
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .features__wrapper {
-    flex-wrap: wrap;
-  }
   .revolutionary__title {
     font-size: 26px;
   }
 
-  .features__tab-title {
-    display: flex;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .features__desc-title {
-    display: none;
-  }
-  .features__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-  }
-  .features__item-text-block {
-    width: 136%;
-    text-align: center;
-    margin: 0;
-  }
-  .features__item-icon {
-    display: flex;
-    justify-content: center;
-    width: 43%;
-    margin-bottom: 27px;
-    margin-left: 0;
-    text-align: center;
-  }
-  .features__img {
-    width: 100%;
+  .features {
+    background: rgba(0, 0, 0, 0.0001);
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__tab-title {
+      display: flex;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__desc-title {
+      display: none;
+    }
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+    }
+    &__item-icon {
+      display: flex;
+      justify-content: center;
+      width: 43%;
+      margin-bottom: 27px;
+      margin-left: 0;
+      text-align: center;
+    }
+    &__item-text-block {
+      width: 136%;
+      text-align: center;
+      margin: 0;
+    }
+    &__img {
+      width: 100%;
+      margin-left: 2%;
+    }
+    &__list {
+      margin: 0;
+    }
   }
 }
 
