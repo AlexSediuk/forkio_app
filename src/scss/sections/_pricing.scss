@@ -164,12 +164,22 @@
 }
 .pricing-list__item:nth-child(3) {
   background: rgba(55, 6, 42, 0.4);
-  position: relative;
+  //position: relative;
+  //top: 50px;
+
+  .pricing-list__item-category {
+    padding: 43px 96px;
+  }
+  .pricing-list__item-cost {
+
+  }
+  .pricing-list__item-cost-inner {
+    font-size: 82px;
+    line-height: 90px;
+  }
+
+  .pricing-list__item-advantage {
+    //margin-bottom: 10px;
+  }
 }
-.pricing-list__item-cost-inner:nth-child(3) {
-  font-size: 82px;
-  line-height: 90px;
-}
-.pricing-list__item-category:nth-child(3) {
-  padding: 43px 0;
-}
+
