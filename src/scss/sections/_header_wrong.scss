@@ -1,0 +1,107 @@
+
+.header {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    padding: 2rem 0;
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 25% 60% 15%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex: 0 0 60px;
+        color: $purple-color;
+        transition: .3s;
+
+        &-img {
+            background-image: url('../../img/logo/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            width: 43px;
+            height: 41px;
+
+        }
+
+        &-img:hover {
+            background-image: url('../../img/logo/logo-hover.png');
+            transition: .5s;
+        }
+
+        &-text {
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        &-text:hover {
+            color: #fff;
+            transition: .5s;
+        };
+
+    }
+
+    &__burger {
+        display: none;     
+        
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+    }
+
+    &__list {
+        display: flex;
+        margin-right: 2.5rem;
+    }
+    
+    &__list li {
+        margin-left: 2.625rem;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: .975rem;
+        color: $purple-color;
+    }
+
+    &__link:hover {
+        color: #fff;
+        transition: .5s;
+    }
+
+    &__button {
+        font-family: 'Montserrat';
+        padding: .5rem 2.3rem;
+        @include button-styles;
+        background-color: $purple-color;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 17px;
+        justify-self: end;
+        // min-width: 143px;
+        // max-height: 41px;
+    }
+
+    &__button:hover {
+        background-color: #fff;
+        color: $purple-color;
+        transition: .5s;
+        
+    }
+}
+
