@@ -266,8 +266,11 @@
       justify-self: center;
     }
   }
-
   .about__title {
+    font-size: 36px;
     text-align: center;
+  }
+  .action__button {
+    font-size: 1.125rem !important;
   }
 }
