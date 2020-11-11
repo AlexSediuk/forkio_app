@@ -1,16 +1,15 @@
-@import 'variables';
-@import 'mixins';
-@import 'reset';
-@import './sections/header';
-@import './sections/revolutionary';
-@import './sections/features';
-@import './sections/about';
-@import './sections/pricing';
-@import './media';
-
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "./sections/header";
+@import "./sections/revolutionary";
+@import "./sections/features";
+@import "./sections/about";
+@import "./sections/pricing";
+@import "media";
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     // font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
 //  padding: 0 10px;
 //}
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -33,71 +31,64 @@ a {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 // ======== SECTION INTRO
 
 .intro {
-    background-image: url('../img/sections/intro-background.png');
+    background-image: url("../img/sections/intro-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
-    
+
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 30%;
     }
-        
 
-        &-text {
-            color: #fff;
-            padding-top: 20%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-
-
-            &-property {
-                color: $grey-color;
-            }
-        }
-    
-
-
-    .action {
+    &-text {
+        color: #fff;
+        padding-top: 20%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-        height: 100%;
-        top: 57px;
-
-        &__button {
-            @include button-styles;
-            padding: .875rem 2.5rem;
-            font-size: 1.3rem;
-            margin-bottom: 1.1rem;
-            background-color: $purple-color;
-            color: #fff;
-        
-        }
-
-        &__button:hover {
-            background-color: #fff;
-            color: $purple-color;
-            transition: .5s;
-        }
-    
-        &__text {
-            color: $grey-color;
-            font-size: 0.875rem;
-        }
+        text-align: center;
     }
 
+    &-property {
+        color: $grey-color;
+    }
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    top: 57px;
+
+    &__button {
+        @include button-styles;
+        padding: 0.875rem 2.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.1rem;
+        background-color: $purple-color;
+        color: #fff;
+    }
+
+    &__button:hover {
+        background-color: #fff;
+        color: $purple-color;
+        transition: 0.5s;
+    }
+
+    &__text {
+        color: $grey-color;
+        font-size: 0.875rem;
+    }
+}
