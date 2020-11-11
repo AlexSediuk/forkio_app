@@ -13,6 +13,17 @@
         display: flex;
         align-items: center;
         transition: .3s;
+
+        &-img {
+            background-image: url('../../img/logo/logo.png');
+            width: 43px;
+            height: 41px;
+
+            &:hover {
+                background-image: url('../../img/logo/logo-hover.png');
+                transition: .3s;
+            }
+        }
     }
 
     &__logo-text {
