@@ -8,21 +8,18 @@
     width: 100%;
     background-position: center;
 
-    
-
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 25%;
-    
 
-    &-text {
-        color: #fff;
-        padding-top: 10%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        &-text {
+            color: #fff;
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
             &-title {
                 color: #fff;
@@ -43,9 +40,8 @@
                 color: $grey-color;
             }
         }
-        
-        }
     }
+}
 
 .action {
     display: flex;
