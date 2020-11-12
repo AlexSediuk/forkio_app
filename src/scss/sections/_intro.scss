@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+
+.intro {
+    background-image: url("../img/sections/intro-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+
+    
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25%;
+    
+
+    &-text {
+        color: #fff;
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+            &-title {
+                color: #fff;
+                font-size: 5rem;
+                line-height: 5rem;
+                font-weight: bold;
+                margin-bottom: 1.1rem;
+            }
+
+            &-subtitle {
+                font-family: "Lato", sans-serif;
+                color: $purple-color;
+                font-size: 1.8rem;
+                margin-bottom: 1.1rem;
+            }
+
+            &-property {
+                color: $grey-color;
+            }
+        }
+        
+        }
+    }
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    top: 57px;
+
+    &__button {
+        @include button-styles;
+        padding: 0.875rem 2.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.1rem;
+        background-color: $purple-color;
+        color: #fff;
+    }
+
+    &__button:hover {
+        background-color: #fff;
+        color: $purple-color;
+        transition: 0.5s;
+    }
+
+    &__text {
+        color: $grey-color;
+        font-size: 0.875rem;
+    }
+}
