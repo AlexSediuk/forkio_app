@@ -3,9 +3,12 @@
 
 //--------------------S E D I U K--------------------
 
+@media screen and (max-width: 1200px) {
+}
+
 @media screen and (min-width: 481px) and (max-width: 992px) {
   .revolutionary__title {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   .features {
     background: rgba(0, 0, 0, 0.0001);
@@ -15,7 +18,7 @@
       flex-wrap: wrap;
     }
     &__title {
-      font-size: 42px;
+      font-size: 2.625rem;
       justify-content: center;
       margin: 0;
     }
@@ -26,7 +29,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem;
     }
     &__img {
       margin-left: 3%;
@@ -34,19 +37,19 @@
     }
   }
   .pricing-list {
-    margin-top: 39px;
+    margin-top: 2.4375rem;
   }
   .pricing__title {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   .pricing-list__item {
-    margin: 0 15px 71px 0;
+    margin: 0 0.9375rem 4.438rem 0;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .revolutionary__title {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 
   .features {
@@ -57,9 +60,9 @@
     }
     &__tab-title {
       display: flex;
-      font-size: 32px;
+      font-size: 2rem;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 3.125rem;
     }
     &__desc-title {
       display: none;
@@ -74,7 +77,7 @@
       display: flex;
       justify-content: center;
       width: 43%;
-      margin-bottom: 27px;
+      margin-bottom: 1.6875rem;
       margin-left: 0;
       text-align: center;
     }
@@ -92,13 +95,13 @@
     }
   }
   .pricing__title {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .pricing-list {
-    margin-top: 32px;
-  }
-  .pricing-list__item {
-    margin: 18px 0 0 0;
+    margin-top: 2rem;
+    &__item {
+      margin: 1.125rem 0 0 0;
+    }
   }
 }
 

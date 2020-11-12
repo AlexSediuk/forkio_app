@@ -4,38 +4,36 @@
 
   &__wrapper {
     display: flex;
-    
   }
 
   &__desc-title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: $purple-color;
   }
 
   &__tab-title {
     display: none;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
     color: $purple-color;
   }
 
   &__title-img {
-    margin-top: 90px;
+    margin-top: 5.625rem;
   }
   &__img {
-
   }
 
   &__list {
-    margin-top: 98px;
+    margin-top: 6.125rem;
   }
 
   &__item {
     display: -webkit-box;
 
     &-icon {
-      margin-left: 60px;
+      margin-left: 3.75rem;
       width: 15%;
       text-align: center;
     }
@@ -43,19 +41,19 @@
     &-text-block {
       width: 65%;
       grid-area: dd;
-      margin-left: 24px;
-      margin-bottom: 35px;
+      margin-left: 1.5rem;
+      margin-bottom: 2.1875rem;
 
       &-title {
-        margin-bottom: 17px;
-        font-size: 16px;
-        line-height: 21px;
+        margin-bottom: 1.0625rem;
+        font-size: 1rem;
+        line-height: 1.3125rem;
         color: #323232;
       }
 
       &-subtitle {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
         color: $grey-color;
       }
     }
