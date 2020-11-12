@@ -1,13 +1,13 @@
-@import "variables";
-@import "mixins";
-@import "reset";
+@import "./variables";
+@import "./mixins";
+@import "./reset";
 @import "./sections/intro";
 @import "./sections/header";
 @import "./sections/revolutionary";
 @import "./sections/features";
 @import "./sections/about";
 @import "./sections/pricing";
-@import "media";
+@import "./media";
 
 body {
     font-family: "Montserrat", sans-serif;
