@@ -111,8 +111,6 @@
 
 //--------------------T R E I K O --------------------
 
-// HEADER
-
 @media screen and (min-width: 481px) and (max-width: 992px) {
   .header {
     background-color: $header-bcg;
@@ -125,9 +123,6 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
-    }
-
-    &__logo {
     }
 
     &__menu {
@@ -144,9 +139,6 @@
 
     &__list li {
       margin: 0;
-    }
-
-    &__link {
     }
 
     &__button {
@@ -255,7 +247,7 @@
     }
 
     &__link {
-      font-size: 1.6rem;
+      //font-size: 1.6rem;
       font-weight: normal;
       color: #fff;
     }
@@ -285,7 +277,13 @@
     text-align: center;
   }
   .action__button {
-    font-size: 1.125rem !important;
+    font-size: 1.125rem;
+  }
+  .intro__info-text-title {
+    font-size: 3rem;
+  }
+  .intro__info-text-subtitle {
+    font-size: 1.125rem;
   }
 }
 
