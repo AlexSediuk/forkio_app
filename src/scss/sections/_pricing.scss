@@ -7,183 +7,112 @@
 
   &__wrapper {
     display: grid;
-    padding-top: 83px;
+    padding-top: 5.188rem;
     margin: 0 auto;
   }
 
   &__title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
-    color: #FFF;
+    color: #fff;
   }
 }
 
 .pricing-list {
   display: inline-flex;
   justify-content: space-between;
-  //flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 112px 0;
-
+  margin: 7rem 0;
 
   &__item {
     background: rgba(128, 128, 128, 0.5);
-    margin-right: 15px;
+    margin-right: 0.9375rem;
     text-align: center;
-
-    //&:nth-child(3) {
-    //  background: rgba(55, 6, 42, 0.4);
-    //  font-size: 82px;
-    //}
-
-    //&-big {
-    //  display: inline-grid;
-    //  background: #463048;
-    //  //width: 299px;
-    //  //height: 560px;
-    //  margin-right: 15px;
-    //  text-align: center;
-    //  position: relative;
-    //  top: -47px;
-    //}
 
     &-category {
       @include central;
       background: rgba(255, 255, 255, 0.1);
-      font-size: 24px;
-      padding: 35px 0;
+      font-size: 1.5rem;
+      padding: 2.1875rem 0;
       text-transform: uppercase;
-      color: #FFF;
+      color: #fff;
 
       &:nth-child(3) {
-        padding: 50px 0;
+        padding: 3.125rem 0;
       }
-
-      //&-big {
-      //  padding: 45px 0;
-      //}
     }
 
     &-cost {
       display: grid;
       align-items: center;
 
-      //&-big {
-      //  display: grid;
-      //  align-items: center;
-      //}
-
       &-inner {
         @include central;
-        font-size: 60px;
-        line-height: 90px;
-        padding-top: 20px;
+        font-size: 3.75rem;
+        line-height: 5.625rem;
+        padding-top: 1.25rem;
         align-items: start;
         text-transform: uppercase;
-        color: #FFF;
-
-
-
-        //&-big {
-        //  @include central;
-        //  line-height: 90px;
-        //  margin-bottom: 10px;
-        //  align-items: start;
-        //  text-transform: uppercase;
-        //  color: #FFF;
-        //}
+        color: #fff;
       }
     }
 
     &-subtitle {
       position: relative;
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 0.875rem;
+      line-height: 1rem;
       text-align: center;
       text-transform: uppercase;
-      margin-bottom: 30px;
-      padding-top: 20px;
-      color: #FFF;
+      margin-bottom: 1.875rem;
+      padding-top: 1.25rem;
+      color: #fff;
 
       &::after {
         @include pseudo;
         background: $purple-color;
         width: 25%;
-        height: 5px;
-        top: 70px;
+        height: 0.313rem;
+        top: 4.375rem;
         right: 36%;
       }
-
-      //&-big {
-      //  position: relative;
-      //  font-size: 14px;
-      //  line-height: 16px;
-      //  text-align: center;
-      //  text-transform: uppercase;
-      //  margin-bottom: 30px;
-      //  color: #FFF;
-      //
-      //  &::after {
-      //    top: 70px;
-      //    right: 115px;
-      //  }
-      //}
     }
 
     &-advantage {
       height: 2rem;
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 1rem;
+      line-height: 1.125rem;
       text-align: center;
-      margin: 75px 0;
-      color: #FFF;
-
-      //&-big {
-      //  margin-bottom: 100px;
-      //}
+      margin: 4.688rem 0;
+      color: #fff;
     }
 
     &-btn {
       background: rgba(255, 255, 255, 0.1);
       border: none;
-      border-radius: 40px;
+      border-radius: 2.5rem;
       text-decoration: none;
       font-size: 15px;
-      margin: 0 47px 36px 47px;
-      padding: 15px 37px;
+      margin: 0 2.9375rem 2.25rem 2.9375rem;
+      padding: 0.9375rem 2.3125rem;
       text-transform: uppercase;
-      color: #FFF;
-      outline: none;
-
-      //&-big {
-      //  position: relative;
-      //  bottom: -24px;
-      //  margin-left: 22%;
-      //}
+      color: #fff;
     }
   }
-
 }
 .pricing-list__item:nth-child(3) {
   background: rgba(55, 6, 42, 0.4);
-  //position: relative;
-  //top: 50px;
 
   .pricing-list__item-category {
-    padding: 43px 96px;
+    padding: 2.6875rem 6rem;
   }
   .pricing-list__item-cost {
-
   }
   .pricing-list__item-cost-inner {
-    font-size: 82px;
-    line-height: 90px;
+    font-size: 5.125rem;
+    line-height: 5.625rem;
   }
-
   .pricing-list__item-advantage {
-    //margin-bottom: 10px;
   }
 }
-
